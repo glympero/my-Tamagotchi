@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var monsterImg: UIImageView!
+    @IBOutlet weak var heartImg: DragImage!
+    @IBOutlet weak var foodImg: DragImage!
     
 
     override func viewDidLoad() {
@@ -27,5 +29,10 @@ class ViewController: UIViewController {
     }
 
 
+    
+    
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        print("I just Touched the screen")
+//    }
 }
 

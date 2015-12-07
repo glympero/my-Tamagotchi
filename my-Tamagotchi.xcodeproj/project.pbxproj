@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		762BC41A1C15CE8700DF0FEA /* DragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BC4191C15CE8700DF0FEA /* DragImage.swift */; };
 		767862181C149C4000CD0827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767862171C149C4000CD0827 /* AppDelegate.swift */; };
 		7678621A1C149C4000CD0827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767862191C149C4000CD0827 /* ViewController.swift */; };
 		7678621D1C149C4000CD0827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7678621B1C149C4000CD0827 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		762BC4191C15CE8700DF0FEA /* DragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImage.swift; sourceTree = "<group>"; };
 		767862141C149C4000CD0827 /* my-Tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-Tamagotchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767862171C149C4000CD0827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767862191C149C4000CD0827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		7678620B1C149C4000CD0827 = {
 			isa = PBXGroup;
 			children = (
+				762BC4191C15CE8700DF0FEA /* DragImage.swift */,
 				767862161C149C4000CD0827 /* my-Tamagotchi */,
 				767862151C149C4000CD0827 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7678621A1C149C4000CD0827 /* ViewController.swift in Sources */,
+				762BC41A1C15CE8700DF0FEA /* DragImage.swift in Sources */,
 				767862181C149C4000CD0827 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
