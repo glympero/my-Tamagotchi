@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		762BC41A1C15CE8700DF0FEA /* DragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BC4191C15CE8700DF0FEA /* DragImage.swift */; };
+		762BC41C1C15D82D00DF0FEA /* MonsterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762BC41B1C15D82D00DF0FEA /* MonsterImage.swift */; };
 		767862181C149C4000CD0827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767862171C149C4000CD0827 /* AppDelegate.swift */; };
 		7678621A1C149C4000CD0827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767862191C149C4000CD0827 /* ViewController.swift */; };
 		7678621D1C149C4000CD0827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7678621B1C149C4000CD0827 /* Main.storyboard */; };
 		7678621F1C149C4000CD0827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7678621E1C149C4000CD0827 /* Assets.xcassets */; };
 		767862221C149C4100CD0827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767862201C149C4100CD0827 /* LaunchScreen.storyboard */; };
+		76C3D7C31C1872190098D167 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7BE1C1872190098D167 /* bite.wav */; };
+		76C3D7C41C1872190098D167 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7BF1C1872190098D167 /* cave-music.mp3 */; };
+		76C3D7C51C1872190098D167 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C01C1872190098D167 /* death.wav */; };
+		76C3D7C61C1872190098D167 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C11C1872190098D167 /* heart.wav */; };
+		76C3D7C71C1872190098D167 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C21C1872190098D167 /* skull.wav */; };
+		76C3D7CB1C18923D0098D167 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3D7CA1C18923D0098D167 /* StartingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		762BC4191C15CE8700DF0FEA /* DragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImage.swift; sourceTree = "<group>"; };
+		762BC41B1C15D82D00DF0FEA /* MonsterImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImage.swift; sourceTree = "<group>"; };
 		767862141C149C4000CD0827 /* my-Tamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my-Tamagotchi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		767862171C149C4000CD0827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767862191C149C4000CD0827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		7678621E1C149C4000CD0827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		767862211C149C4100CD0827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		767862231C149C4100CD0827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C3D7BE1C1872190098D167 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		76C3D7BF1C1872190098D167 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		76C3D7C01C1872190098D167 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		76C3D7C11C1872190098D167 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		76C3D7C21C1872190098D167 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
+		76C3D7CA1C18923D0098D167 /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,12 @@
 		7678620B1C149C4000CD0827 = {
 			isa = PBXGroup;
 			children = (
+				76C3D7BE1C1872190098D167 /* bite.wav */,
+				76C3D7BF1C1872190098D167 /* cave-music.mp3 */,
+				76C3D7C01C1872190098D167 /* death.wav */,
+				76C3D7C11C1872190098D167 /* heart.wav */,
+				76C3D7C21C1872190098D167 /* skull.wav */,
+				762BC41B1C15D82D00DF0FEA /* MonsterImage.swift */,
 				762BC4191C15CE8700DF0FEA /* DragImage.swift */,
 				767862161C149C4000CD0827 /* my-Tamagotchi */,
 				767862151C149C4000CD0827 /* Products */,
@@ -63,6 +83,7 @@
 				7678621E1C149C4000CD0827 /* Assets.xcassets */,
 				767862201C149C4100CD0827 /* LaunchScreen.storyboard */,
 				767862231C149C4100CD0827 /* Info.plist */,
+				76C3D7CA1C18923D0098D167 /* StartingViewController.swift */,
 			);
 			path = "my-Tamagotchi";
 			sourceTree = "<group>";
@@ -125,6 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C3D7C71C1872190098D167 /* skull.wav in Resources */,
+				76C3D7C31C1872190098D167 /* bite.wav in Resources */,
+				76C3D7C51C1872190098D167 /* death.wav in Resources */,
+				76C3D7C61C1872190098D167 /* heart.wav in Resources */,
+				76C3D7C41C1872190098D167 /* cave-music.mp3 in Resources */,
 				767862221C149C4100CD0827 /* LaunchScreen.storyboard in Resources */,
 				7678621F1C149C4000CD0827 /* Assets.xcassets in Resources */,
 				7678621D1C149C4000CD0827 /* Main.storyboard in Resources */,
@@ -138,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762BC41C1C15D82D00DF0FEA /* MonsterImage.swift in Sources */,
 				7678621A1C149C4000CD0827 /* ViewController.swift in Sources */,
 				762BC41A1C15CE8700DF0FEA /* DragImage.swift in Sources */,
 				767862181C149C4000CD0827 /* AppDelegate.swift in Sources */,
+				76C3D7CB1C18923D0098D167 /* StartingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

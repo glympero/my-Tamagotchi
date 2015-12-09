@@ -13,6 +13,8 @@ class DragImage: UIImageView {
     
     //Variable which holds the beginning point
     var originalPosition: CGPoint!
+    //Using UIView instead of UIIMage(Even though we know it targets an image) in order to be able to reuse class, with for example a button
+    var dropTarget: UIView?
     
     
     //Override some initialisers in order to make it work
@@ -45,5 +47,15 @@ class DragImage: UIImageView {
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         //Return dragged item to the original position
         self.center = originalPosition
+        
+        if let touch = touches.first, let  target = dropTarget{
+            let position = touch.locationInView(self.superview)
+            
+            //Function which checks if the frame of the target contains a point from position (the current center of our touch)
+            if CGRectContainsPoint(target.frame, position){
+                //Creating and posting a new notification
+                NSNotificationCenter.defaultCenter().postNotificationName("onTargetDropped", object: nil)
+            }
+        }
     }
 }

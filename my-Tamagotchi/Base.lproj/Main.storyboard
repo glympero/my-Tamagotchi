@@ -66,7 +66,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-QD-ODA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-QD-ODA" customClass="MonsterImage" customModule="my_Tamagotchi" customModuleProvider="target">
                                 <rect key="frame" x="-65" y="215" width="597" height="319"/>
                                 <animations/>
                                 <constraints>
@@ -74,11 +74,11 @@
                                     <constraint firstAttribute="width" constant="597" id="pEV-PN-dnM"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="xUg-o4-Nu4">
-                                <rect key="frame" x="180" y="103" width="250" height="98"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xUg-o4-Nu4">
+                                <rect key="frame" x="180" y="103" width="180" height="65"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="2yQ-Rx-lFa" customClass="DragImage" customModule="my_Tamagotchi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="65"/>
                                         <animations/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="0oD-UT-yIi"/>
@@ -97,8 +97,16 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="fruit (4)" translatesAutoresizingMaskIntoConstraints="NO" id="LUg-TS-Tzy" customClass="DragImage" customModule="my_Tamagotchi" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="60" height="65"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="8y4-ya-h2O"/>
+                                            <constraint firstAttribute="height" constant="65" id="p6S-9h-LZz"/>
+                                        </constraints>
+                                    </imageView>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-HQ-xrf" customClass="DragImage" customModule="my_Tamagotchi" customModuleProvider="target">
-                                        <rect key="frame" x="155" y="0.0" width="95" height="98"/>
+                                        <rect key="frame" x="120" y="0.0" width="60" height="65"/>
                                         <animations/>
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="0.0" y="95" width="60" height="65"/>
@@ -126,6 +134,29 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plh-az-K4u">
+                                <rect key="frame" x="199" y="191" width="148" height="54"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="ZLf-Pi-xYx"/>
+                                    <constraint firstAttribute="width" constant="148" id="giW-Cd-b4y"/>
+                                </constraints>
+                                <state key="normal" image="restart"/>
+                                <connections>
+                                    <action selector="restartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OrO-GE-g4m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Restart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLP-xU-69V">
+                                <rect key="frame" x="218" y="186" width="110" height="54"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="2aX-JL-EJD"/>
+                                    <constraint firstAttribute="width" constant="110" id="9uA-fa-kfb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -139,6 +170,7 @@
                             <constraint firstItem="Kvz-iH-F28" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I8v-ki-dvX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pxN-QD-ODA" secondAttribute="bottom" constant="66" id="KZw-8l-llz"/>
                             <constraint firstAttribute="trailing" secondItem="Kvz-iH-F28" secondAttribute="trailing" id="MZB-vd-YZ3"/>
+                            <constraint firstItem="plh-az-K4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3b-wZ-NB6"/>
                             <constraint firstItem="NBc-zM-u6H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vgw-2I-R0g"/>
                             <constraint firstAttribute="trailing" secondItem="be7-Db-hGB" secondAttribute="trailing" id="WDZ-Mx-70N"/>
                             <constraint firstAttribute="leading" secondItem="pxN-QD-ODA" secondAttribute="leading" constant="65" id="Xp2-rz-8cv"/>
@@ -149,8 +181,11 @@
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpb-cC-QxI"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="lE6-SS-EZ5"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="top" secondItem="NBc-zM-u6H" secondAttribute="bottom" constant="8" id="mxk-DG-a5Q"/>
+                            <constraint firstItem="plh-az-K4u" firstAttribute="top" secondItem="NBc-zM-u6H" secondAttribute="bottom" constant="120" id="q6z-F0-ANJ"/>
                             <constraint firstItem="be7-Db-hGB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="reC-nx-fWq"/>
                             <constraint firstItem="be7-Db-hGB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ruc-ix-ovj"/>
+                            <constraint firstItem="ZLP-xU-69V" firstAttribute="centerX" secondItem="plh-az-K4u" secondAttribute="centerX" id="tMP-hS-s76"/>
+                            <constraint firstItem="ZLP-xU-69V" firstAttribute="centerY" secondItem="plh-az-K4u" secondAttribute="centerY" constant="-3" id="vNP-OF-ldx"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -178,7 +213,13 @@
                     <connections>
                         <outlet property="foodImg" destination="Xh5-HQ-xrf" id="0PO-Lz-sKq"/>
                         <outlet property="heartImg" destination="2yQ-Rx-lFa" id="UeU-pq-SdI"/>
+                        <outlet property="heart_food" destination="LUg-TS-Tzy" id="Ms0-uQ-4ug"/>
                         <outlet property="monsterImg" destination="pxN-QD-ODA" id="Cdk-VO-Zr5"/>
+                        <outlet property="restartBtn" destination="plh-az-K4u" id="crg-ee-Hgh"/>
+                        <outlet property="restartLbl" destination="ZLP-xU-69V" id="Rd5-nU-Nbn"/>
+                        <outlet property="skull1Img" destination="8Tz-uO-332" id="q1D-tp-TI1"/>
+                        <outlet property="skull2Img" destination="75X-P8-Jm8" id="Evn-kd-M08"/>
+                        <outlet property="skull3Img" destination="tbR-1O-NJA" id="pcA-nM-tzJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,10 +230,12 @@
     <resources>
         <image name="bg" width="768" height="1024"/>
         <image name="food" width="95" height="98"/>
+        <image name="fruit (4)" width="36" height="43"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
+        <image name="restart" width="212" height="78"/>
         <image name="skull" width="95" height="98"/>
     </resources>
 </document>
