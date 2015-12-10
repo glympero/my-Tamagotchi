@@ -19,7 +19,8 @@
 		76C3D7C51C1872190098D167 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C01C1872190098D167 /* death.wav */; };
 		76C3D7C61C1872190098D167 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C11C1872190098D167 /* heart.wav */; };
 		76C3D7C71C1872190098D167 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 76C3D7C21C1872190098D167 /* skull.wav */; };
-		76C3D7CB1C18923D0098D167 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3D7CA1C18923D0098D167 /* StartingViewController.swift */; };
+		76C3D7CF1C19AF510098D167 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3D7CE1C19AF510098D167 /* StartingViewController.swift */; };
+		76C3D7F11C19C3EA0098D167 /* WorkerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C3D7F01C19C3EA0098D167 /* WorkerImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		76C3D7C01C1872190098D167 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
 		76C3D7C11C1872190098D167 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
 		76C3D7C21C1872190098D167 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
-		76C3D7CA1C18923D0098D167 /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		76C3D7CE1C19AF510098D167 /* StartingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		76C3D7F01C19C3EA0098D167 /* WorkerImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		7678620B1C149C4000CD0827 = {
 			isa = PBXGroup;
 			children = (
+				76C3D7F01C19C3EA0098D167 /* WorkerImage.swift */,
 				76C3D7BE1C1872190098D167 /* bite.wav */,
 				76C3D7BF1C1872190098D167 /* cave-music.mp3 */,
 				76C3D7C01C1872190098D167 /* death.wav */,
@@ -83,7 +86,7 @@
 				7678621E1C149C4000CD0827 /* Assets.xcassets */,
 				767862201C149C4100CD0827 /* LaunchScreen.storyboard */,
 				767862231C149C4100CD0827 /* Info.plist */,
-				76C3D7CA1C18923D0098D167 /* StartingViewController.swift */,
+				76C3D7CE1C19AF510098D167 /* StartingViewController.swift */,
 			);
 			path = "my-Tamagotchi";
 			sourceTree = "<group>";
@@ -165,10 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				762BC41C1C15D82D00DF0FEA /* MonsterImage.swift in Sources */,
+				76C3D7F11C19C3EA0098D167 /* WorkerImage.swift in Sources */,
 				7678621A1C149C4000CD0827 /* ViewController.swift in Sources */,
 				762BC41A1C15CE8700DF0FEA /* DragImage.swift in Sources */,
 				767862181C149C4000CD0827 /* AppDelegate.swift in Sources */,
-				76C3D7CB1C18923D0098D167 /* StartingViewController.swift in Sources */,
+				76C3D7CF1C19AF510098D167 /* StartingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

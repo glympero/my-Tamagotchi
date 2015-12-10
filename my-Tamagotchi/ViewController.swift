@@ -11,8 +11,9 @@ import AVFoundation
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var monsterImg: MonsterImage!
+    @IBOutlet weak var monsterImg: WorkerImage!
     @IBOutlet weak var heartImg: DragImage!
+    @IBOutlet weak var workerImg: WorkerImage!
     @IBOutlet weak var foodImg: DragImage!
     
     @IBOutlet weak var skull1Img: UIImageView!
@@ -41,14 +42,26 @@ class ViewController: UIViewController {
     
     var monsterHappy = false
     
+    var chooseChar: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //monsterImg.playIdleAnimation()
        // monsterImg.playDeathAnimation()
-        foodImg.dropTarget = monsterImg
-        heartImg.dropTarget = monsterImg
-        heart_food.dropTarget = monsterImg
+        if chooseChar == "monster"{
+            foodImg.dropTarget = monsterImg
+            heartImg.dropTarget = monsterImg
+            heart_food.dropTarget = monsterImg
+            workerImg.hidden = true
+            monsterImg.hidden = false
+        }else if chooseChar == "human" {
+            foodImg.dropTarget = workerImg
+            heartImg.dropTarget = workerImg
+            heart_food.dropTarget = workerImg
+            workerImg.hidden = false
+            monsterImg.hidden = true
+        }
+        
         
         do{
             try musicPlayer = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("cave-music", ofType: "mp3")!))
@@ -85,6 +98,7 @@ class ViewController: UIViewController {
             sfxHeart.play()
             sfxFood.play()
         }
+        
     }
     
     func disableItems(){
@@ -100,6 +114,7 @@ class ViewController: UIViewController {
     func changeGameState(){
         
         if !monsterHappy{
+            
             penalties++
             sfxBite.play()
             if penalties == 1 {

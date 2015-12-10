@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ldL-Vp-tXy">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -66,7 +66,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-QD-ODA" customClass="MonsterImage" customModule="my_Tamagotchi" customModuleProvider="target">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="pxN-QD-ODA" customClass="MonsterImage" customModule="my_Tamagotchi" customModuleProvider="target">
                                 <rect key="frame" x="-65" y="215" width="597" height="319"/>
                                 <animations/>
                                 <constraints>
@@ -157,15 +157,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="hero_Idle1" translatesAutoresizingMaskIntoConstraints="NO" id="mJx-57-IMs" customClass="WorkerImage" customModule="my_Tamagotchi" customModuleProvider="target">
+                                <rect key="frame" x="72" y="313" width="400" height="213"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="Knc-yt-Uzd"/>
+                                    <constraint firstAttribute="width" constant="400" id="td7-Y9-Jjr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kvz-iH-F28" secondAttribute="bottom" id="3ta-gs-ToO"/>
+                            <constraint firstItem="mJx-57-IMs" firstAttribute="top" secondItem="plh-az-K4u" secondAttribute="bottom" constant="68" id="4D1-Pe-eiP"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="5" id="5FM-as-DuH"/>
                             <constraint firstItem="NBc-zM-u6H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CJl-mU-6sE"/>
                             <constraint firstItem="HTf-lV-Bhe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="Cfh-mZ-rv8"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="be7-Db-hGB" secondAttribute="bottom" id="F2q-2Q-m5t"/>
+                            <constraint firstAttribute="centerX" secondItem="mJx-57-IMs" secondAttribute="centerX" id="HWi-Ji-88S"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="top" secondItem="NBc-zM-u6H" secondAttribute="bottom" constant="8" id="Hbg-5W-bBg"/>
                             <constraint firstItem="Kvz-iH-F28" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I8v-ki-dvX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pxN-QD-ODA" secondAttribute="bottom" constant="66" id="KZw-8l-llz"/>
@@ -179,6 +189,7 @@
                                 <variation key="heightClass=compact" constant="55"/>
                             </constraint>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpb-cC-QxI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mJx-57-IMs" secondAttribute="bottom" constant="74" id="cgV-Ji-Ckf"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="lE6-SS-EZ5"/>
                             <constraint firstItem="xUg-o4-Nu4" firstAttribute="top" secondItem="NBc-zM-u6H" secondAttribute="bottom" constant="8" id="mxk-DG-a5Q"/>
                             <constraint firstItem="plh-az-K4u" firstAttribute="top" secondItem="NBc-zM-u6H" secondAttribute="bottom" constant="120" id="q6z-F0-ANJ"/>
@@ -220,22 +231,95 @@
                         <outlet property="skull1Img" destination="8Tz-uO-332" id="q1D-tp-TI1"/>
                         <outlet property="skull2Img" destination="75X-P8-Jm8" id="Evn-kd-M08"/>
                         <outlet property="skull3Img" destination="tbR-1O-NJA" id="pcA-nM-tzJ"/>
+                        <outlet property="workerImg" destination="mJx-57-IMs" id="fJo-8Q-jU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="374"/>
+            <point key="canvasLocation" x="1547" y="328"/>
+        </scene>
+        <!--Starting View Controller-->
+        <scene sceneID="v7m-N8-m8i">
+            <objects>
+                <viewController id="ldL-Vp-tXy" customClass="StartingViewController" customModule="my_Tamagotchi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cpg-zc-ntg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wiF-9D-zND"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ebS-dc-8gl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="SZk-iJ-Ke6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7MI-yC-Cgu">
+                                <rect key="frame" x="198" y="314" width="255" height="204"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="AsD-8B-6t2"/>
+                                    <constraint firstAttribute="width" constant="255" id="RuV-Ta-Vvj"/>
+                                </constraints>
+                                <state key="normal" image="hero_Idle1"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="humanSegue" id="Ygw-jb-Ci1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl5-9C-uw3">
+                                <rect key="frame" x="173" y="104" width="255" height="171"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="MrI-yN-hxF"/>
+                                    <constraint firstAttribute="height" constant="171" id="azT-Er-Ftl"/>
+                                </constraints>
+                                <state key="normal" image="creature"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="monsterSegue" id="JXR-lL-5oz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a Character!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-pX-NOG">
+                                <rect key="frame" x="229" y="28" width="143" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="9Iy-Bj-xCG"/>
+                                    <constraint firstAttribute="height" constant="32" id="aHj-Je-M5L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7MI-yC-Cgu" firstAttribute="top" secondItem="Jl5-9C-uw3" secondAttribute="bottom" constant="39" id="3aa-JA-jIl"/>
+                            <constraint firstItem="7MI-yC-Cgu" firstAttribute="centerX" secondItem="ebS-dc-8gl" secondAttribute="centerX" constant="25" id="6sm-K9-yQP"/>
+                            <constraint firstItem="Oht-pX-NOG" firstAttribute="top" secondItem="cpg-zc-ntg" secondAttribute="bottom" constant="8" id="Pxn-Lc-pvX"/>
+                            <constraint firstItem="Jl5-9C-uw3" firstAttribute="centerX" secondItem="ebS-dc-8gl" secondAttribute="centerX" id="Rep-a4-k4O"/>
+                            <constraint firstItem="Oht-pX-NOG" firstAttribute="centerX" secondItem="ebS-dc-8gl" secondAttribute="centerX" id="eBd-1T-65T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eqD-8Y-nM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="345"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="768" height="1024"/>
+        <image name="creature" width="360" height="242"/>
         <image name="food" width="95" height="98"/>
         <image name="fruit (4)" width="36" height="43"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
+        <image name="hero_Idle1" width="271" height="271"/>
         <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="restart" width="212" height="78"/>
         <image name="skull" width="95" height="98"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ygw-jb-Ci1"/>
+    </inferredMetricsTieBreakers>
 </document>
